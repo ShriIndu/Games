@@ -1,74 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:thambolaaaaaaa_test/animation_test.dart';
-import 'package:thambolaaaaaaa_test/main.dart';
-import 'package:thambolaaaaaaa_test/tambola_manually.dart';
-import 'package:thambolaaaaaaa_test/tambola_test.dart';
-import 'package:thambolaaaaaaa_test/tombola_my_page.dart';
-import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:slot_machine_roller/slot_machine_roller.dart';
-import 'package:flutter/material.dart';
-import 'package:thambolaaaaaaa_test/button.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/services.dart';
 import 'package:confetti/confetti.dart';
-import 'package:thambolaaaaaaa_test/slotmachine_controller.dart';
 import 'dart:async';
 import 'dart:math';
-
-import 'package:thambolaaaaaaa_test/tambola_manually.dart';
-
-class ButtonsPage extends StatefulWidget {
-  const ButtonsPage({super.key});
-
-  @override
-  State<ButtonsPage> createState() => _ButtonsPageState();
-}
-
-class _ButtonsPageState extends State<ButtonsPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const TambolaPage()),
-                );
-              },
-              child: const Text('Tombola'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const MyHomePage()),
-                );
-              },
-              child: const Text('slot Machine'),
-            ),
-            // const SizedBox(height: 20),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => const MyTombolaHomePage()),
-            //     );
-            //   },
-            //   child: const Text('Tombola'),
-            // ),
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
